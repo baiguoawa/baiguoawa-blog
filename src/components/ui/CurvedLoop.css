@@ -1,0 +1,39 @@
+.curved-loop-jacket {
+  min-height: clamp(92px, 11vw, 142px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  touch-action: pan-y;
+}
+
+.curved-loop-svg {
+  user-select: none;
+  width: 100%;
+  aspect-ratio: 100 / 12;
+  overflow: visible;
+  display: block;
+  color: var(--ink);
+  fill: currentColor;
+  font-size: clamp(32px, 4.4vw, 64px);
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.footer-loop-text {
+  fill: color-mix(in srgb, var(--ink) 78%, var(--orange));
+  letter-spacing: 0;
+}
+
+@media (max-width: 680px) {
+  .curved-loop-jacket {
+    min-height: 92px;
+  }
+
+  .curved-loop-svg {
+    font-size: clamp(28px, 9vw, 44px);
+  }
+}
